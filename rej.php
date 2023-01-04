@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style3.css">
 </head>
 <body>
-
 <div id="header">
 		<div id="menu">
 			<div id="menu-left">
@@ -16,7 +15,7 @@
 			</div>
 			<div id="menu-right">
 				<ul>
-					<li><a href="index.php">O nas</a></li>
+					<li><a href="index.php">Strona Główna</a></li>
 					<li><a href="sell.php">Sprzedaj</a></li>
 					<li><a href="rej.php">Rejestracja</a></li>
 					<li><a href="login.php">Zaloguj</a></li>
@@ -47,7 +46,6 @@
 		Nr. tel <input type="number" name="user_phone"><br>
         Hasło: <input type="password" name="user_pass"><br><br>
         <input type="submit" name="" value="Zarejestruj">
-		
     </form>
 	</div>
 	<?php
@@ -56,46 +54,36 @@
  {
      $t = $_POST['user_name'];
      $t = htmlentities($t);
-    
-    
     if(isset($_POST['user_login']))
     {
         $n = $_POST['user_login'];
         $n = htmlentities($n);
-        
        if(isset($_POST['user_pass']))
        {
            $x = $_POST['user_pass'];
            $x = htmlentities($x);
 		   $x = hash('sha256', $x);
-           
 		   if(isset($_POST['user_email']))
 		   {
 			   $j = $_POST['user_email'];
 			   $j = htmlentities($j);
-
            	 	if(isset($_POST['user_phone']))
               	{
                 	$z = $_POST['user_phone'];
                 	$z = htmlentities($z);
-
                 $q = "insert into users values('','{$t}','{$n}','{$j}','{$z}','{$x}')";
                 $r = mysqli_query($connection, $q); 
             	}
             }
         }
     }
-}
-            
+}      
 ?>
-
 <div id="formularz">
 <a href="login.php">Przejdź do logowania</a>
 </div>
-
 <div id="footer">
 Wszelkie prawa zastrzeżone - &copy; 2022
 </div>
-
 </body>
 </html>

@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style6.css">
 </head>
 <body>
-
 <div id="header">
 		<div id="menu">
 			<div id="menu-left">
@@ -16,7 +15,7 @@
 			</div>
 			<div id="menu-right">
 				<ul>
-					<li><a href="index.php">O nas</a></li>
+					<li><a href="index.php">Strona Główna</a></li>
 					<li><a href="sell.php">Sprzedaj</a></li>
 					<li><a href="rej.php">Rejestracja</a></li>
 					<li><a href="login.php">Zaloguj</a></li>
@@ -28,14 +27,12 @@
 				<span>BMW e38<br /></span>
 				<p>BMW e38 już od 30 tys zł</p>
 				</div>
-		
                 <a href="post.php">
 			<div class="button">
 			OGŁOSZENIA
             </div>
             </a>
 			</div>
-
 </div>
 <div id="formularz">
 <form action="" method="post">
@@ -55,7 +52,6 @@
 <?php
 session_start();
 
-
 if(isset($_SESSION['user_log'])){
 
 	$login=$_SESSION['user_log'];
@@ -65,7 +61,6 @@ if(isset($_SESSION['user_log'])){
  {
      $a = $_POST['car_name'];
      $a = htmlentities($a);
-    
     
     if(isset($_POST['car_model']))
     {
@@ -136,11 +131,8 @@ else
 	header("location:mustlog.php");
 }  
 ?>
-
-    
 <div id="footer">
 Wszelkie prawa zastrzeżone - &copy; 2022
 </div>
-
 </body>
 </html>

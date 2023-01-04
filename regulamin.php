@@ -14,7 +14,7 @@
 			</div>
 			<div id="menu-right">
 				<ul>
-					<li><a href="index.php">O nas</a></li>
+					<li><a href="index.php">Strona Główna</a></li>
 					<li><a href="sell.php">Sprzedaj</a></li>
 					<li><a href="rej.php">Rejestracja</a></li>
 					<li><a href="login.php">Zaloguj</a></li>
@@ -26,7 +26,6 @@
 				<span>Volvo xc60<br /></span>
 				<p>Volvo xc60 już od 180 tys zł</p>
 				</div>
-		
                 <a href="post.php">
 			<div class="button">
 			OGŁOSZENIA
@@ -34,7 +33,6 @@
             </a>
 			</div>
 </div>
-
 <div id="right">
 			<div class="news">
 			<h1>REGULAMIN</h1>
@@ -137,5 +135,4 @@
 <div id="footer">
 Wszelkie prawa zastrzeżone - &copy; 2022
 </div>
-	
 </html>

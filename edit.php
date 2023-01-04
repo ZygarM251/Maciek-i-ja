@@ -12,7 +12,6 @@
     <div id="baner">
     <a href="main.php"><div id="brand"></div></a>
         <span id="upload">Edycja</span>
-
     </div>
     <div id="left_list">
         <div id="menu">
@@ -30,7 +29,6 @@
             <input type="submit" name="btn" value="Zmień">
         </form>
     </div>
-
     <?php
     if(isset($_GET['id']) && is_numeric($_GET['id']))
     {

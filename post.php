@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style7.css">
 </head>
 <body>
-
 <div id="header">
 		<div id="menu">
 			<div id="menu-left">
@@ -16,7 +15,7 @@
 			    </div>
 			    <div id="menu-right">
 				<ul>
-					<li><a href="index.php">O nas</a></li>
+					<li><a href="index.php">Strona Główna</a></li>
 					<li><a href="sell.php">Sprzedaj</a></li>
 					<li><a href="rej.php">Rejestracja</a></li>
 					<li><a href="login.php">Zaloguj</a></li>
@@ -29,22 +28,17 @@
 				<span>BMW e30 M3<br /></span>
 				BMW e30 już od 30 tys zł
 				</div>
-
-            <a href="buton.php">
+            <a href="index.php">
 			<div class="button">
-			OGŁOSZENIA
+			STRONA GŁÓWNA
             </div>
             </a>
 		</div>
 </div>
-
 <?php
-
 require('connect.php');
-
 $query="select  car_id,car_name , car_model , car_year , car_run , car_engine , car_gear  , 
 car_horsepower  , car_color  , car_img , car_date,car_price  FROM cars order by car_year ;";
-
 $result=@mysqli_query($connection,$query);
 if($result){
 		while($row = mysqli_fetch_assoc($result)){
@@ -67,17 +61,13 @@ if($result){
 			<input type='submit' name='' value='Edytuj'>
 			</form>
 			<div style = 'color:red'><h2>Cena: {$row['car_price']} zł</h2></div>
-				
 			</div>
 		</div>";
 	}
 	}
 ?>
-
 <div id="footer">
 Wszelkie prawa zastrzeżone - &copy; 2021
 </div>
-
-
 </body>
 </html>

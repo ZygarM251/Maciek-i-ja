@@ -14,7 +14,7 @@
 			</div>
 			<div id="menu-right">
 				<ul>
-					<li><a href="index.php">O nas</a></li>
+					<li><a href="index.php">Strona Główna</a></li>
 					<li><a href="sell.php">Sprzedaj</a></li>
 					<li><a href="rej.php">Rejestracja</a></li>
 					<li><a href="login.php">Zaloguj</a></li>
@@ -24,7 +24,7 @@
 			<div id="menu-banner">
 				<div id="message">
 				<span>Toyota Supra mk4<br /></span>
-				<p>Toyota supra już od 150 tys zł</p>
+				<p>Toyota Supra już od 150 tys zł</p>
 				</div>
                 <a href="post.php">
 			<div class="button">
@@ -49,7 +49,6 @@
 			pomoc@otomoto.pl<br>
 			(od pn. do pt. w godz. 08:00 - 17:00)	
 			</p>
-			 
 			</div>
 			<div class="news">
 			<h1>Partnerzy</h1>
@@ -58,7 +57,6 @@
 			<a href="https://www.otodom.pl/">Otodom.pl</a><br>
 			<a href="https://fixly.pl/">Fixly.pl</a>
 			</p>
-
 			</div>
 			<div class="news">
 			<h1>Nasze Social Media</h1>
@@ -77,5 +75,4 @@
 <div id="footer">
 Wszelkie prawa zastrzeżone - &copy; 2022
 </div>
-	
 </html>

@@ -1,4 +1,5 @@
-html,body{
+html,body
+{
     width: 100%;
     height: 100%;
     margin: 0px;
@@ -15,10 +16,11 @@ html,body{
 	background-position: 0PX -100px;
 	transition-duration: .5s;
 }
-a{
-list-style-type:none;
-text-decoration: none;
-color: red;
+a
+{
+	list-style-type:none;
+	text-decoration: none;
+	color: red;
 }
 #menu
 {
@@ -85,7 +87,8 @@ color: red;
 	font-size: 18px;
 	transition-duration: .3s;
 }
-#formularz{
+#formularz
+{
 	margin-top: 50px;
 	margin-left: 820px;
 	place-content:initial ;
@@ -95,7 +98,8 @@ color: red;
 	padding: 20px;
     text-align: center;
 }
-#footer{
+#footer
+{
     bottom:0;
     width:100%;
     height:60px;
